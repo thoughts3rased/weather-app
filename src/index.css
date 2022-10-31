@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+img{
+  width: 100%;
+}
+
+.pageBody{
+  object-fit: fill;
+  height: 100vh;
+}
+
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+}
+
+#weatherIcon{
+  margin-top: 31px;
+}
+
+p{
+  font-style: italic;
+  font-weight: 1;
+}
+
+.mainWeatherInfo{
+  font-size: 500%;
+  padding-bottom: 0;
+  display: inline;
+  text-align: center;
+}
+
+.mainWeatherInfo > ul{
+  align-items: center;
+}
+
+.feelsLike{
+  text-align: center;
+  font-size: 200%;
+  margin-top: -5%;
+}
+
+
+.locationName{
+  width: 100%;
+  text-align: center;
+  font-size: 500%;
+  padding-top: 0.01%;
+  margin-bottom: -90px;
+}
+
+.searchBar{
+  width: 100%;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.searchBar > form > input{
+  min-width: 40%;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 50;
+}
+
+.searchBar > form > button{
+  font-size: 40px;
+  font-kerning: none;
+}
+
+.pageBody{
+  transition: background-color 2s ease;
+}
+
+
+@keyframes fadeMe {
+  from {
+    background-color: #ffffff;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+#conditionDescription{
+  text-transform: capitalize;
+}
