@@ -50,7 +50,6 @@ const Page = (props) => {
       } catch {
         targetLocation = currentLocation
       }
-      console.log(targetLocation)
       e.preventDefault()
       getWeatherDataForLocation(targetLocation)
         .then((result) =>{
@@ -86,7 +85,7 @@ const Page = (props) => {
               <div className = "mainWeatherInfo">
                 <ul>
                   <li><p>{currentCondition}  {currentTemp}°C</p></li>
-                  <li id="weatherIcon"><img src = {currentIcon}/></li>
+                  <li id="weatherIcon"><img alt="" src = {currentIcon}/></li>
                 </ul>
               </div>
               <div className = "feelsLike">
