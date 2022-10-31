@@ -5,7 +5,7 @@ import './index.css';
 import SearchIcon from '@material-ui/icons/Search';
 import { getWeatherDataForLocation } from './functions/getWeatherDataForLocation';
 import { determineNewBackgroundColour } from './functions/determineNewBackgroundColour';
-import styled, { keyframes } from 'styled-components';
+import { keyframes } from 'styled-components';
 
 const Page = (props) => {
     
