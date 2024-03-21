@@ -16,7 +16,7 @@ const Page = (props) => {
     const [currentFLTemp, setCurrentFLTemp] = useState()
     const [currentIcon, setCurrentIcon] = useState("")
     const [currentDescription, setCurrentDescription] = useState("")
-    const [prevColour, setPrevColour] = useState("#ffffff")
+    const [prevColour] = useState("#ffffff")
 
 
     const bgTransition = () => keyframes`
