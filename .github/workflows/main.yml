@@ -1,0 +1,15 @@
+on:
+  pull_request:
+    branches: 
+      - master
+
+jobs:
+  my_job:
+    name: build project
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: install dependencies
+      run: npm install
+    - name: build project 
+      run: npm build
