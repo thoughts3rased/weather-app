@@ -1,5 +1,5 @@
 export const getWeatherDataForLocation = (locationString) => {
-    return fetch(`http://api.openweathermap.org/data/2.5/weather?q=${locationString}&appid=2b6cf1cd9218d6b59aeb1f4d79637576&units=metric`, {'Content-Type': 'application/json', 'Accept': 'application/json'})
+    return fetch(`http://api.openweathermap.org/data/2.5/weather?q=${locationString}&appid=0ea2f238a16deb7be13cdc31b0a89463&units=metric`, {'Content-Type': 'application/json', 'Accept': 'application/json'})
         .then(res => res.json())
         .catch(error =>{
             throw new Error(error)

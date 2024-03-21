@@ -16,7 +16,7 @@ const Page = (props) => {
     const [currentFLTemp, setCurrentFLTemp] = useState()
     const [currentIcon, setCurrentIcon] = useState("")
     const [currentDescription, setCurrentDescription] = useState("")
-    const [prevColour, setPrevColour] = useState("#ffffff")
+    const [prevColour] = useState("#ffffff")
 
 
     const bgTransition = () => keyframes`
@@ -29,8 +29,7 @@ const Page = (props) => {
     }
     `
 
-    useEffect(() =>{
-      
+    useEffect(() =>{   
       getWeatherDataForLocation(currentLocation)
       .then((result) =>{
         setCurrentLocation(result.locationName)
@@ -41,7 +40,7 @@ const Page = (props) => {
         setCurrentIcon(`http://openweathermap.org/img/wn/${result.iconId}@2x.png`)
         setCurrentLocationCode(result.locationCode)
       })
-    }, [])
+    }, [currentLocation])
     
     const handleChange = (e) =>{
       let targetLocation
