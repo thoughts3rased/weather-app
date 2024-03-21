@@ -29,8 +29,7 @@ const Page = (props) => {
     }
     `
 
-    useEffect(() =>{
-      
+    useEffect(() =>{   
       getWeatherDataForLocation(currentLocation)
       .then((result) =>{
         setCurrentLocation(result.locationName)
@@ -41,7 +40,7 @@ const Page = (props) => {
         setCurrentIcon(`http://openweathermap.org/img/wn/${result.iconId}@2x.png`)
         setCurrentLocationCode(result.locationCode)
       })
-    }, [])
+    }, [currentLocation])
     
     const handleChange = (e) =>{
       let targetLocation
